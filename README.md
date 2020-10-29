@@ -21,13 +21,14 @@ Attestations must be single clause and composable. They are either part of VC or
 
 ## Components of Attestations
 - Proof issued by attesters (ie issuer attests a set of attributes or values).
-- Proof are digital signatures encoded with JWT, compatible with W3C Verified Credentials Model (ref: [https://www.w3.org/TR/vc-data-model/](https://www.w3.org/TR/vc-data-model/)).
 
 Examples are:
 - Birth Certificate (single clause)
 - Passport (single clause)
 - License
 - Others 
+
+An example of a birth certificate clause might be eg Are you older than 18?, this attestation, because is precondition, is attest offchain with traditional APIs instead of using onchain transactions. It means most of 
 
 ----------------------------------
 Prereq: Birth Cert
