@@ -1,25 +1,23 @@
 # PAID Protocol
 
-## Place Intro here
+## Chapter 1 - Verifiable credentials, attestations, proof, quorum signatures and oraclized data feeds
 
 
 ### Smart Agreements
 
-## Domains
-
-### Attestations: 
+#### Attestations
 An attestation is a proof issued by an attester or issuer, either human, smart contract or API.
 
 *The attestation model for PAID* uses W3C Verifiable Credentials Model with JSON Schemas packed as JWT. This allows us to use JWT basic features like aud, iss, nbf, exp and others sub
 
-- aud: Audience
-- iss: Issuer
-- nbf: Not Before
-- exp: Expiration
-- sub: Subject
-*reference: *[https://tools.ietf.org/html/rfc7519#section-4](https://tools.ietf.org/html/rfc7519#section-4)
+- *aud*: Audience
+- *iss*: Issuer
+- *nbf*: Not Before
+- *exp*: Expiration
+- *sub*: Subject
 
-Attestations models are similar to Smart Agreements, with the difference they are a single clause, instead of many found in most legal agreements. An attestation model must be based on JSON Schemas.
+
+Attestations must be single clause and composable. They are either part of VC or subset of VC Model, JSON Schemas converted to JWT using `did-jwt`.
 
 ## Components of Attestations
 - Proof issued by attesters (ie issuer attests a set of attributes or values).
