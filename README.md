@@ -61,14 +61,47 @@ An example of a birth certificate clause might be eg Are you older than 18?, thi
     "signatureCorrectnessProof": "SNQbW3u1QV5q89qhxA1xyVqFa6jCrKwv...dsRypyuGGK3RhhBUvH1tPEL8orH"
   }
 }}
-
 ```
 
 
-### Agreements: 
-- Rules should be executed by contracts and generate events.
-- The contract read the terms (from: )
-- El contrato tiene términos y cláusulas inherentes que son adicionales a los attestations 
+#### Agreement Terms
+Thus, with prerequisites of a smart agreement implemented using Verfiable Credentials model, it is also possible to construct or build an agremment
+between two parties (eg Alice buys a house from Bob) using VC modeled JSON Schemas, we can then define the following JSON schema:
+
+## General Smart Agreements JSON Schema 
+```javascript
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://www.w3.org/2018/credentials/examples/v1",
+    "https://paidnetwork/2020/agreements/v1",
+    "https://paidnetwork/2020/vc/v1",
+  ],
+  "type": ["VerifiableCredential", "UniversityDegreeCredential"],
+  "credentialSchema": {
+    "id": "did:example:cdf:35LB7w9ueWbagPL94T9bMLtyXDj9pX5o",
+    "type": "did:example:schema:22KpkXgecryx9k7N6XN1QoN3gXwBkSU8SfyyYQG"
+  },
+  "issuer": "did:paid:Wz4eUg7SetGfaUVCn8U9d62oDYrUJLuUtcy619",
+  "credentialSubject": { // metadata
+    "givenName": "Jane",
+    "familyName": "Doe",
+    "age": 18,
+  },
+  "proof": {
+    "type": "CLSignature2019",   // Proof must check itsed                                                                                          
+    "issuerData": "5NQ4TgzNfSQxoLzf2d5AV3JNiCdMaTgm...BXiX5UggB381QU7ZCgqWivUmy4D",
+    "attributes": "pPYmqDvwwWBDPNykXVrBtKdsJDeZUGFA...tTERiLqsZ5oxCoCSodPQaggkDJy",
+    "signature": "8eGWSiTiWtEA8WnBwX4T259STpxpRKuk...kpFnikqqSP3GMW7mVxC4chxFhVs",
+    "signatureCorrectnessProof": "SNQbW3u1QV5q89qhxA1xyVqFa6jCrKwv...dsRypyuGGK3RhhBUvH1tPEL8orH"
+  }
+}}
+```
+
+
+
+#### Resolutions, courts and disputes
+
 
 ## Attestation Model
 - Open source tools for JSON Schema with verify credentials
