@@ -110,7 +110,7 @@ These conditions must be validated and coded in packaged forms. Solido Forms are
  [has Alice crashed Bob and accepted crash accident]
  
 
-Turn this to a matrix, where vertical are the claims, and horizonal are the different actors involved
+Turn this to a matrix, where vertical are the `claims`, and horizonal are the different `actors` involved
 [Alice, Bob]
 [0, 0]    - has Alice crashed Bob
 [0, 0]    - has Bob crashed Alice
@@ -118,7 +118,10 @@ Turn this to a matrix, where vertical are the claims, and horizonal are the diff
 [0, 0]    - hsa Bob accepted accident
 
 
-Thus, we get a way to calculate decision making using digital signa
+Thus, we get a way to calculate decision making using digital signatures, what we call Smart Agreements, using similar contracts.
+
+####m
+
 #### Resolutions, courts and disputes
 
 ### Introducing Solido Forms, an agnostic template framework to stored JSON Schema mapped data
