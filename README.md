@@ -112,13 +112,82 @@ These conditions must be validated and coded in packaged forms. Solido Forms are
 
 Turn this to a matrix, where vertical are the `claims`, and horizonal are the different `actors` involved
 [Alice, Bob]
-[0, 0]    - has Alice crashed Bob
+[0, 1]    - has Alice crashed Bob
 [0, 0]    - has Bob crashed Alice
 [0, 0]    - has Alice accepted accident
-[0, 0]    - hsa Bob accepted accident
+[0, 0]    - has Bob accepted accident
 
 
-Thus, we get a way to calculate decision making using digital signatures, what we call Smart Agreements, using similar contracts.
+Thus, we get a way to calculate decision making using digital signatures, what we call Smart Agreements, using smart contracts with digital signatures features. 
+Using digital signatures signing, we can transform clauses to Solidity/RLP compatible packaged data.
+
+A packed message with VC digital signatures, can be translated to xxHash operations (AND, OR, XOR):
+
+[Alice, Bob]
+[hash_0_0, hash_0_1]
+[...]
+
+Once PAID Solido Forms generates the matrix to ABIEncode or RLP, it is used in 2 scenarios:
+
+1. xxHash are used as hash verifications (boolean algebra)
+2. Because a hash, in this case non-cryptography, we can sign that with EdDSA/ECDSA and use that for Smart Routing purposes and/or rules engine.
+
+In this case:
+
+- "Has Alice crashed Bob: [$true]"  -> xxHash -> xxHash signed with ECDSA
+- "Has Alice crashed Bob: [$false]" -> xxHash -> xxHash signed with ECDSA
+
+Then you could send it to Smart Routing:
+
+
+findDecisionFromAgreementFacts(
+   smartAgreement,   // as metadata
+   oracleFacts,      // has Alice crashed Bob from real time data sources = yes
+   anyExistingSignatures
+)
+
+Then each decision making contract is created as a Metatransaction and uses EIP712:
+
+1. EIP712 Domain Name -- CarInsuranceDecisionMaker
+2. EIP712 Method implemented -- handleCarCollisionBetweenTwoParties()
+3. Pending define eg
+    a. signed(hash [0,0]) === signed(address)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+// pseudo code
+const 
+
+
+```
+
+####ccccc`w
 
 ####m
 
