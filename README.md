@@ -1,5 +1,4 @@
 # PAID Protocol
-# PAID Protocol
 
 ## Chapter 1 - Verifiable credentials, attestations, proof, quorum signatures and oraclized data feeds
 
