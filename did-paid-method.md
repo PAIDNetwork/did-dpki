@@ -43,8 +43,8 @@ to ensure all parties are accountable under a jurisdiction. In a simple legal ag
  
  There are two different implementations here:
  
- - Use of centralized CAs: (Use Let's Encrypt with ECDSA Support)[https://letsencrypt.org/certificates/]
- - Use of PAID Network Decentralized CA nodes: Using a combination of Smart Contracts and or a LB of CAs nodes
+ - `Use of centralized CAs`: [Use Let's Encrypt with ECDSA Support](https://letsencrypt.org/certificates/)
+ - `Use of PAID Network Decentralized CA nodes`: Using a combination of Smart Contracts and or a LB of CAs nodes
  
  #### Option 1 - Let's Encrypt
  
