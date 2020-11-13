@@ -1,16 +1,16 @@
-# did-dpki 
+## did-dpki 
 
-## A did method to verify identity and residence using pluggable authentication sources
+### A did method to verify identity and residence using pluggable authentication sources
 
 
-### Why did-dpki
+#### Why did-dpki
 
 PAID Smart Agreements need verifiable proof of identity to work well with legal contracts. Legal contracts, because they are binding, need a way
 to ensure all parties are accountable under a jurisdiction. In a simple legal agreement workflow, a KYC solution might be enough. But considering PAID
  is a decentralized based protocol, using smart contracts and oracles, we'll need a good set of technology stack that supports enough data sources and still
  keep the level of decentralization required.
  
- ### Proposal
+ #### Proposal
  
  `did-dpki` uses DID Method specification as standard to be able to integrate with other DID applications and services in the ecosystem. Based from ideas found in
  `did-ethr`, we will have the following:
