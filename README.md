@@ -58,6 +58,10 @@ to ensure all parties are accountable under a jurisdiction. In a simple legal ag
  #### Option 2 - Smart Contract
  
  A Smart Contract in Polkadot can issue ECDSA keypairs. And either using EVM or Polkadot, be able to verify ECDSA keypairs onchain.
+
+ > Para este punto, ya PolkaDOT maneja dos esquemas:
+ > - [Edgeware](https://docs.edgewa.re/) `Ethereum WebAssembly (Ewasm)`
+ > - [!ink](https://substrate.dev/substrate-contracts-workshop/#/) `ink! is an eDSL to write WebAssembly based smart contracts using the Rust programming language`
  
  #### Proof of Address
  
