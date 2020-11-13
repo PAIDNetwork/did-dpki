@@ -107,13 +107,23 @@ The figure below illustrates the three primary components of a Sidetree-based DI
 ![Content Addressable Storage (CAS) Network `e.g. IPFS`](/draft-defined-did-dpki-protocol/image/sidetree-system.svg) 
 "Content Addressable Storage (CAS) Network `e.g. IPFS`"
 
-## 8. File Strcutures
+## 8. File Structures
 
 The protocol defines the following three file structures, which house DID operation data and are designed to support key functionality to enable light node configurations, minimize permanently retained data, and ensure performant resolution of DIDs.
 
 # Imagen
 ![File Structuras](/draft-defined-did-dpki-protocol/image/file-topology.svg) 
 "File Structures `e.g. IPFS`"
+
+## Merkle Implemetacion for Batch
+
+### - [Merkle tree(Hash trees) is used in distributed systems(and many other places) to detect differences between two large datasets by using minimal network transfers](https://github.com/gomathi/merkle-tree)
+
+### - [Centriguge Precise Proofs](https://github.com/centrifuge/precise-proofs)
+
+### - [Introducing Precise-Proofs: Create & Validate Field-Level Merkle Proofs](https://medium.com/centrifuge/introducing-precise-proofs-create-validate-field-level-merkle-proofs-a31af9220df0)
+
+---------------
 
 ## Important Search (DIF Sidetree Protocol)
 
