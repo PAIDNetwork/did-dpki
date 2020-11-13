@@ -105,7 +105,7 @@ The figure below illustrates the three primary components of a Sidetree-based DI
 
 # Imagen
 ![Content Addressable Storage (CAS) Network `e.g. IPFS`](/draft-defined-did-dpki-protocol/image/sidetree-system.svg) 
-"Content Addressable Storage (CAS) Network `e.g. IPFS`"
+- "Content Addressable Storage (CAS) Network `e.g. IPFS`"
 
 ## 8. File Structures
 
@@ -113,7 +113,7 @@ The protocol defines the following three file structures, which house DID operat
 
 # Imagen
 ![File Structuras](/draft-defined-did-dpki-protocol/image/file-topology.svg) 
-"File Structures `e.g. IPFS`"
+- "File Structures `e.g. IPFS`"
 
 ## Merkle Implemetacion for Batch
 
