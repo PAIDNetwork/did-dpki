@@ -161,13 +161,3 @@ The protocol defines the following three file structures, which house DID operat
 
 
 ### - [W3C did-ether DIDs Github](https://www.google.com/search?q=did-ethr&oq=did-ethr&aqs=chrome..69i57&sourceid=chrome&ie=UTF-8)
-
-------------------
-
-## Merkle Implemetacion for Batch
-
-### - [Merkle tree(Hash trees) is used in distributed systems(and many other places) to detect differences between two large datasets by using minimal network transfers](https://github.com/gomathi/merkle-tree)
-
-### - [Centriguge Precise Proofs](https://github.com/centrifuge/precise-proofs)
-
-### - [Introducing Precise-Proofs: Create & Validate Field-Level Merkle Proofs](https://medium.com/centrifuge/introducing-precise-proofs-create-validate-field-level-merkle-proofs-a31af9220df0)
