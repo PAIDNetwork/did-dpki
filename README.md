@@ -34,7 +34,7 @@ to ensure all parties are accountable under a jurisdiction. In a simple legal ag
  
  #### P384 or secp256r1
 
- >> Sobre lo dos estadante se que el primero el P-384 es por un tema de firmas digitales pero a nivel del manejo de las Keys pairs, Polka DOT, hace uso de estandar ed25519 y no del secp256k1, y esto tiene una justificacion documentada aqui:
+ > Sobre lo dos estandar se que el primero el P-384 es por un tema de firmas digitales pero a nivel del manejo de las Keys pairs, Polka DOT, hace uso de estándar ed25519 y no del secp256k1, y esto tiene una justificación documentada aquí:
  > - [Why was ed25519 selected over secp256k1?](https://wiki.polkadot.network/docs/en/learn-keys#why-was-ed25519-selected-over-secp256k1)
  > - [Appendix A: On the security of curves](https://wiki.polkadot.network/docs/en/learn-keys#appendix-a-on-the-security-of-curves)
  
@@ -59,14 +59,32 @@ to ensure all parties are accountable under a jurisdiction. In a simple legal ag
  
  A Smart Contract in Polkadot can issue ECDSA keypairs. And either using EVM or Polkadot, be able to verify ECDSA keypairs onchain.
 
- > Para este punto, ya PolkaDOT maneja dos esquemas:
+ > Para este punto, ya PolkaDOT maneja dos plataformas de desarollo:
  > - [Edgeware](https://docs.edgewa.re/) `Ethereum WebAssembly (Ewasm)`
  > - [!ink](https://substrate.dev/substrate-contracts-workshop/#/) `ink! is an eDSL to write WebAssembly based smart contracts using the Rust programming language`
  
  #### Proof of Address
  
  Using an existing KYC provider Proof of Address service, create a Chainlink oracle that handles any KYC related actions. In this special case, because of cost, any proof of address validation must be accounted in the transaction and billed depending on token being used.
+
+ > - [Verifiable Claims for Postal Addresses: A Use Case for Decentralized Postal Services using DIDs, VCs and Blockchains](https://github.com/WebOfTrustInfo/rwot10-buenosaires/blob/master/topics-and-advance-readings/vc-postal-addresses.md)
  
+### Previous Work
+
+- **XDV Technology**: Contains components to create digital signatures for documents using HD Wallet technology and integrates with Swarm (ethereum) and compatible with hardware modules that support PKCS#11 and PKCS#12. Links: https://app.xdv.digital/about/#/ (Spanish), https://app.xdv.digital/
+- **MDV**: A Solidity state  machine and workflow engine, using optimized code with RLP encoding. Links: https://gist.github.com/molekilla/b85f1c9de63be3afacbfeca703bb3fe4 (Spanish)
+
+
+### Ecosystem Fit 
+
+- **OpenLaw**: Smart contract based legal agreements. Links: https://www.openlaw.io/
+
+Our project is different in that our team has had more than a year of experience with making wallets for blockchain dapps and then half a year with deep experience in DID, Swarm, IPFS and document signing, which are the bulk of tech experience as defined in OpenLaw. But our protocol takes it a bit further and uses oracles and ML to make it more automated and allows for hybrid scenarios, where a ML business logic can rank or tag a dispute and then it can be further review by an incentivized human arbitror, allowing for consensus of a dispute. Compared to OpenLaw, which is OpenCourt API is strictly human based, our protocol excels not only in the dispute/arbitrage, but also at transcribing using NLP instead of a Markup Language.
+
+Further along, by adding the latest in identity technology, allows us to delegate authority to smart contracts using the DID decentralized identity of the individual or smart contract.
+
+We think this project, while developed in EVM, will allow for better and transparent DeFi projects to be used in the Polkadot ecosystem.
+
  ### Summary
  
  By maintaining developer efficient processes, putting Proof of Identity and Proof of Address allows our smart agreements protocol, to have near identitical set of requirements as those found in a KYC solution. At the same time, it doesn't disrupt the CA business, it expands the CA and digital signing for vendors. In future protocol upgrades, an incentivization model could be added to make eg a reputation voting system, to be able to have another layer of trust.
@@ -109,7 +127,7 @@ The protocol defines the following three file structures, which house DID operat
 
 ---------------------------------
 
-# List of Relevant Repositories and Pages
+## List of Relevant Repositories and Pages
 
 ### - [Sidetree Protocol with Ethereum, MongodB and IPFS](https://github.com/transmute-industries/sidetree.js)
 
@@ -129,6 +147,17 @@ The protocol defines the following three file structures, which house DID operat
 
 ### - [Letsenscript](https://letsencrypt.org/es/certificates/)
 
+### - [Integration of IPFS into swarm](https://github.com/ethersphere/swarm/wiki/IPFS-&-SWARM#integration-of-ipfs-into-swarm)
+
 
 ### - [W3C did-ether DIDs Github](https://www.google.com/search?q=did-ethr&oq=did-ethr&aqs=chrome..69i57&sourceid=chrome&ie=UTF-8)
 
+------------------
+
+## Merkle Implemetacion for Batch
+
+### - [Merkle tree(Hash trees) is used in distributed systems(and many other places) to detect differences between two large datasets by using minimal network transfers](https://github.com/gomathi/merkle-tree)
+
+### - [Centriguge Precise Proofs](https://github.com/centrifuge/precise-proofs)
+
+### - [Introducing Precise-Proofs: Create & Validate Field-Level Merkle Proofs](https://medium.com/centrifuge/introducing-precise-proofs-create-validate-field-level-merkle-proofs-a31af9220df0)
