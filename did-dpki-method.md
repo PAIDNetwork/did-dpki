@@ -1,9 +1,9 @@
-# did-paid 
+# did-dpki 
 
 ## A did method to verify identity and residence using pluggable authentication sources
 
 
-### Why did-paid
+### Why did-dpki
 
 PAID Smart Agreements need verifiable proof of identity to work well with legal contracts. Legal contracts, because they are binding, need a way
 to ensure all parties are accountable under a jurisdiction. In a simple legal agreement workflow, a KYC solution might be enough. But considering PAID
@@ -12,7 +12,7 @@ to ensure all parties are accountable under a jurisdiction. In a simple legal ag
  
  ### Proposal
  
- `did-paid` uses DID Method specification as standard to be able to integrate with other DID applications and services in the ecosystem. Based from ideas found in
+ `did-dpki` uses DID Method specification as standard to be able to integrate with other DID applications and services in the ecosystem. Based from ideas found in
  `did-ethr`, we will have the following:
  
  - `delegate`: be able to delegate to another did user
@@ -21,12 +21,12 @@ to ensure all parties are accountable under a jurisdiction. In a simple legal ag
  
  It must be resolvable, that is, be able to lookup and match by its public key.
  
- Additionally, did-paid needs to have a decentralized KYC experience, it must be able to do:
+ Additionally, did-dpki needs to have a decentralized KYC experience, it must be able to do:
  
  - `As a user, provision a signed well known document and publish it to IPFS / IPNS`
  - `As a user, approve or reject Certificate Authority keypair issuing`
- - `As a validator, validate did-paid belongs to DNS`
- - `As a validator, validate DNS belongs to a did-paid`
+ - `As a validator, validate did-dpki belongs to DNS`
+ - `As a validator, validate DNS belongs to a did-dpki`
  
  Ideally, but optional, provisioning must permit users to configure a `verified domain name` under paidnetwork or similar DNS name, similar to `domain.kreds`. Eg we could have a party sign a smart agreement with a domain name `alice-wonderland.paid.network` and the other party signing with `bob-realworld.paid.network`.
  
@@ -78,7 +78,7 @@ The figure below illustrates the three primary components of a Sidetree-based DI
 3. An integrated Content-Addressable Storage (CAS) network layer Sidetree nodes use to distribute and replicate DID operation files.
 
 # Imagen
-![Content Addressable Storage (CAS) Network `e.g. IPFS`](/draft-defined-did-paid-protocol/image/sidetree-system.svg) 
+![Content Addressable Storage (CAS) Network `e.g. IPFS`](/draft-defined-did-dpki-protocol/image/sidetree-system.svg) 
 "Content Addressable Storage (CAS) Network `e.g. IPFS`"
 
 ## 8. File Strcutures
@@ -86,7 +86,7 @@ The figure below illustrates the three primary components of a Sidetree-based DI
 The protocol defines the following three file structures, which house DID operation data and are designed to support key functionality to enable light node configurations, minimize permanently retained data, and ensure performant resolution of DIDs.
 
 # Imagen
-![File Structuras](/draft-defined-did-paid-protocol/image/file-topology.svg) 
+![File Structuras](/draft-defined-did-dpki-protocol/image/file-topology.svg) 
 "File Structures `e.g. IPFS`"
 
 ## Important Search (DIF Sidetree Protocol)
