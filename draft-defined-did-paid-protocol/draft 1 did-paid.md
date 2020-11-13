@@ -202,9 +202,9 @@ const
 *** TODO Define how to use digital signatures as routing mechanism using matrix algebra, routing  algos and typed data messages ***
 
 
-### Introducing did-dpki, a decentralized identity method for PAID network
+### Introducing did-paid, a decentralized identity method for PAID network
 
-*** TODO Define the problem and reason to create a customized did-dpki DID Method ***
+*** TODO Define the problem and reason to create a customized did-paid DID Method ***
 
 
 ### PAID Oracles, Incentivized Oracles and other constructs

@@ -1,5 +1,6 @@
-## did-paid 
-### A did method to verify identity and residence using pluggable authentication sources
+# did-paid 
+
+## A did method to verify identity and residence using pluggable authentication sources
 
 
 ### Why did-paid
@@ -64,4 +65,62 @@ to ensure all parties are accountable under a jurisdiction. In a simple legal ag
  
  ### References
  
- TODO
+# Additional Information
+
+- `Additional Information:` [Sidetree Protocol Identity Foundation](https://identity.foundation/sidetree/spec/)
+
+## 7. Network topology
+
+The figure below illustrates the three primary components of a Sidetree-based DID overlay network:
+
+1. The underlying ledger system that serves as the global anchoring and linear sequencing system for DID operations.
+2. The Sidetree nodes themselves, which interact with the ledger system to anchor operations, fetch and replicate data from the CAS network, and process operations in accordance with the protocol deterministic ruleset.
+3. An integrated Content-Addressable Storage (CAS) network layer Sidetree nodes use to distribute and replicate DID operation files.
+
+# Imagen
+![Content Addressable Storage (CAS) Network `e.g. IPFS`](/draft-defined-did-paid-protocol/image/sidetree-system.svg) 
+"Content Addressable Storage (CAS) Network `e.g. IPFS`"
+
+## 8. File Strcutures
+
+The protocol defines the following three file structures, which house DID operation data and are designed to support key functionality to enable light node configurations, minimize permanently retained data, and ensure performant resolution of DIDs.
+
+# Imagen
+![File Structuras](/draft-defined-did-paid-protocol/image/file-topology.svg) 
+"File Structures `e.g. IPFS`"
+
+## Important Search (DIF Sidetree Protocol)
+
+### 8.1 [Anchor File](https://identity.foundation/sidetree/spec/#anchor-file)
+
+### 10. [JSON Web Signatures](https://identity.foundation/sidetree/spec/#json-web-signatures)
+
+### 11. [DID Operations](https://identity.foundation/sidetree/spec/#did-operations)
+
+### 12. [DID State Patches](https://identity.foundation/sidetree/spec/#did-state-patches)
+
+---------------------------------
+
+# List of Relevant Repositories and Pages
+
+### - [Sidetree Protocol with Ethereum, MongodB and IPFS](https://github.com/transmute-industries/sidetree.js)
+
+### - [Github DID](https://github-did.com/)
+
+### - [PAID Netowrk](https://paidnetwork.com/)
+
+### - [Transmute Industries](https://www.transmute.industries/)
+
+### - [Principal Repo of Transmute Industries](https://github.com/transmute-industries)
+
+### - [Verificable Credentials Data Model 1.0 W3C](https://www.w3.org/TR/vc-data-model/)
+
+### - [Transmute Repo of Verificable Credentials](https://github.com/transmute-industries/vc.js)
+
+### - [(SMALL) STEPS A private certificate authority (X.509 & SSH) & ACME server for secure automated certificate management](https://github.com/smallstep/certificates)
+
+### - [Letsenscript](https://letsencrypt.org/es/certificates/)
+
+
+### - [W3C did-ether DIDs Github](https://www.google.com/search?q=did-ethr&oq=did-ethr&aqs=chrome..69i57&sourceid=chrome&ie=UTF-8)
+
