@@ -33,6 +33,10 @@ to ensure all parties are accountable under a jurisdiction. In a simple legal ag
  To implement this use case requires several pieces of technology:
  
  #### P384 or secp256r1
+
+ >> Sobre lo dos estadante se que el primero el P-384 es por un tema de firmas digitales pero a nivel del manejo de las Keys pairs, Polka DOT, hace uso de estandar ed25519 y no del secp256k1, y esto tiene una justificacion documentada aqui:
+ > - [Why was ed25519 selected over secp256k1?](https://wiki.polkadot.network/docs/en/learn-keys#why-was-ed25519-selected-over-secp256k1)
+ > - [Appendix A: On the security of curves](https://wiki.polkadot.network/docs/en/learn-keys#appendix-a-on-the-security-of-curves)
  
  We need to sign the wellknown document using a keypair using ECDSA NIST P384. This to be compatible with the Certificate Authority and Smart Contracts requiring to verify these signatures.
  
